@@ -9,7 +9,8 @@
 <section>
   <h3>Property binding</h3>
   <hr />
-  <img [src]="link" />
+  <img [src]="link" [alt]="alt" [height]="altura" />
+  <!-- <img src="{{ link }}" /> -->
 </section>
 
 <section>
@@ -30,4 +31,13 @@
   <input type="text" [(ngModel)]="estudante.nota2" />
   <input type="text" [(ngModel)]="estudante.nota3" />
   <p>{{ estudante | json }}</p>
+</section>
+
+<section>
+  <h3>Exercício</h3>
+  <p>
+    Crie uma propriedade idade do tipo number. Crie dois botões um para aumentar
+    a idade e outro para diminuir.
+  </p>
+  <hr />
 </section>

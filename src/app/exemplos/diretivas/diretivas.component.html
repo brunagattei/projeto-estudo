@@ -22,6 +22,12 @@
 <section>
   <h3>*ngSwitch</h3>
   <hr />
+  <select [(ngModel)]="status">
+    <option value="loading">Loading</option>
+    <option value="error">Error</option>
+    <option value="data">Data</option>
+  </select>
+
   <div [ngSwitch]="status">
     <p *ngSwitchCase="'loading'">Carregando...</p>
     <p *ngSwitchCase="'error'">Um erro ocorreu...</p>

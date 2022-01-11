@@ -25,7 +25,7 @@ export class DiretivasComponent implements OnInit {
     }
   }
 
-  status: string = 'error';
+  status: string = 'data';
 
   constructor() {}
 
